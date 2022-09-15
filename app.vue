@@ -1,5 +1,13 @@
 <template>
-  <div class="dark">
-    <h1 class="text-red-500 dark:text-dim-800">salut</h1>
+  <div :class="{'dark': darkMode}">
+    <h1 class="text-red-500 dark:text-dim-100">salut</h1>
   </div>
 </template>
+
+<script setup>
+  
+  const darkMode = ref(true)
+
+
+
+</script>
