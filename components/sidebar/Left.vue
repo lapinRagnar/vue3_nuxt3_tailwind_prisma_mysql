@@ -3,7 +3,7 @@
 
 <div
   class="p-2 my-2 hover:bg-yellow-100 rounded-full w-min dark:hover:bg-white/20"
-  :class="transition"
+  :class="defaultTransition"
   >
       <nuxt-link to="/">
 
@@ -22,7 +22,9 @@
 
 <script setup>
 
-  const transition = 'transition ease-in-out duration-350'
+  const { defaultTransition } = useTailwindConfig()
+
+
 </script>
 
 <style>
